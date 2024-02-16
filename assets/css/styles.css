@@ -760,6 +760,9 @@ form:has(:invalid) .submit-btn {
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 22px;
+
+    /* Overflow */
+    overflow: visible;
 }
 
 .service-item__desc {
