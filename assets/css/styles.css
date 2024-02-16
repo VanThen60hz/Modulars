@@ -24,6 +24,7 @@
     --fill-decor-bg: #eaeaea;
     --process-item-hover-bg: #e2eddf;
     --separate-bg: #c4c4c4;
+    --social-link-hover-bg: #a75325;
 
     /* border */
     --feature-item-border: #cecece;
@@ -171,6 +172,41 @@ button {
 
     /* Color */
     background: var(--primary-color-black);
+}
+
+form:has(:invalid) .submit-btn {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.form-group {
+    margin-top: 16px;
+}
+
+.form-group:has(:invalid:not(:placeholder-shown)) .error {
+    display: block;
+}
+
+.form-group .btn {
+    margin-top: 20px;
+    padding: 10px 28px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #fff;
+    background: #f49999;
+    cursor: pointer;
+}
+
+.form-group .btn:hover {
+    opacity: 0.9;
+}
+
+.form-group .error {
+    margin: 10px 4px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+    display: none;
 }
 
 .controls {
@@ -1508,4 +1544,186 @@ button {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.2;
+}
+
+/* ============= Footer ================= */
+.footer {
+    /* Box model */
+    margin-top: 102px;
+    padding: 72px 0 96px;
+
+    /* Color */
+    background: var(--primary-color-black-green);
+
+    /* Text */
+    font-family: var(--font-secondary);
+}
+
+.footer__row {
+    /* Grid system */
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 76px);
+    column-gap: 50px;
+
+    /* Box model */
+    margin-bottom: 45px;
+}
+
+.footer__column:first-child {
+    /* Text */
+    font-family: var(--font-primary);
+}
+
+.footer__heading {
+    /* Color */
+    color: #fff;
+
+    /* Text */
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.newsletter__heading {
+    /* Text */
+    font-size: 3.2rem;
+}
+
+.footer-form {
+    margin-top: 25px;
+    position: relative;
+    width: 354px;
+}
+
+.footer-form::after {
+    /* Positioning */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+
+    /* Box model */
+    content: "";
+    height: 1px;
+
+    /* Color */
+    background: var(--secondary-color-gray);
+}
+
+.footer-form__input {
+    /* Box model */
+    border-radius: 5px;
+    padding: 5px 0;
+    border: transparent;
+
+    /* Color */
+    color: var(--secondary-color-gray);
+    background: transparent;
+
+    /* Text */
+    font-size: 2.2rem;
+    font-weight: 600;
+
+    /* Animation */
+    transition: 0.25s;
+}
+
+.footer-form__input::placeholder {
+    /* Color */
+    color: var(--text-color-black-gray);
+}
+
+.footer-form__input:focus {
+    /* Box model */
+    outline: none;
+    padding-left: 10px;
+
+    /* Color */
+    background: var(--secondary-color-light-green);
+
+    font-weight: 400;
+}
+
+.footer-form__input:focus::placeholder {
+    /* Color */
+    color: var(--text-color-light-gray);
+}
+
+.footer-form__submit {
+    /* Positioning */
+    position: relative;
+    top: 5px;
+
+    /* Box model */
+    background: transparent;
+
+    /* Color */
+    color: #c4c4c4;
+    border: transparent;
+
+    /* User action */
+    cursor: pointer;
+}
+
+.footer-form__submit:hover .footer-form__icon {
+    /* Color */
+    color: #fff;
+}
+
+.socials {
+    /* Flex box */
+    display: flex;
+    gap: 20px;
+
+    /* Box model */
+    margin-top: 80px;
+}
+
+.socials__link {
+    /* Flex box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box model */
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--separate-bg);
+    border-radius: 50%;
+
+    /* Animation */
+    transition: 0.25s;
+}
+
+.socials__link:hover {
+    /* Color */
+    background-color: var(--social-link-hover-bg);
+    border-color: transparent;
+}
+
+.socials__icon {
+    /* Color */
+    background-color: transparent;
+}
+
+.footer__list {
+    margin-top: 10px;
+}
+
+.footer__link {
+    /* Color */
+    color: var(--secondary-color-gray);
+
+    /* Text */
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
+}
+
+.footer__separate {
+    background: linear-gradient(
+        90deg,
+        #143c3c 2.28%,
+        #295a5a 55.65%,
+        rgba(38, 82, 82, 0) 102.06%
+    );
 }
