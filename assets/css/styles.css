@@ -14,7 +14,9 @@
     --primary-color-black-green: #143c3c;
     --text-color-black-gray: #575d5e;
     --text-color-light-gray: #7d8188;
+    --secondary-color-gray: #6a8383;
     --secondary-color-light-green: #e2eddf;
+    --third-color-light-green: #e7f9f9;
     --agwrold-color: #163c35;
 
     /* background */
@@ -1136,4 +1138,136 @@ button {
 .process-item:first-child .process-item__desc {
     /* Visibility */
     visibility: hidden;
+}
+
+/* ================== Project =====================  */
+.project {
+    /* Box model */
+    margin-top: 148px;
+
+    padding: 116px 0 63px;
+
+    /* Color */
+    background: var(--primary-color-black-green);
+}
+
+.project-row {
+    /* Flex box */
+    justify-content: space-between;
+
+    margin-bottom: 65px;
+}
+
+.project__heading {
+    /* Box model */
+    width: 44%;
+
+    /* Color */
+    color: var(--third-color-light-green);
+
+    /* Text */
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
+.project__heading::after {
+    background: var(--btn-border-bg);
+}
+
+.project__content {
+    /* Box model */
+    width: 50%;
+
+    /* Text */
+    font-family: var(--font-secondary);
+}
+
+.project__desc {
+    /* Color */
+    color: var(--secondary-color-gray);
+
+    /* Text */
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.project__link {
+    /* Box model */
+    margin: 13px 26px 0 0;
+
+    /* Color */
+    color: #fff;
+
+    /* Text */
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.project__link:hover {
+    /* Color */
+    color: var(--btn-border-bg);
+}
+
+.project-media {
+    /* Positioning */
+    position: relative;
+}
+
+.project__video {
+    /* Box model */
+    width: 100%;
+    height: 544px;
+}
+
+.project__play-btn {
+    /* Positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    /* Box model */
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background: #636262e3;
+
+    /* User action */
+    cursor: pointer;
+}
+
+.project__decor-icon-01 {
+    /* Positioning */
+    top: -160px;
+    right: 0;
+}
+
+.project__decor-icon-02 {
+    /* Positioning */
+    top: -70px;
+    right: 20px;
+}
+
+/* ================== Features ============== */
+.features {
+    /* Box model */
+    margin-top: 140px;
+}
+
+.features__heading {
+    width: 520px;
+    margin: 0 auto;
+}
+
+.features__heading::after {
+    display: none;
+}
+
+.features__desc {
+    /* Box model */
+    margin-top: 20px;
 }
