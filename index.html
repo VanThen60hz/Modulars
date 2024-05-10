@@ -97,14 +97,27 @@
 
         <!-- Styles css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <!-- Header -->
         <header class="header fixed">
             <div class="container">
                 <div class="row header__wrap">
+                    <!-- Table/mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                     <!-- Logo -->
-                    <a href="/">
+                    <a href="/" class="logo__link">
                         <img
                             src="./assets/icons/logo.svg"
                             alt="MODULARS"
@@ -113,7 +126,7 @@
                     </a>
 
                     <!-- Navbar -->
-                    <nav class="navbar">
+                    <nav class="navbar" id="pc-nav">
                         <ul class="navbar__list">
                             <li class="navbar__item">
                                 <a
@@ -147,7 +160,7 @@
         </header>
 
         <!-- Hero -->
-        <section class="hero" id="hero">
+        <section class="hero" id="hero" style="display: none">
             <div class="container">
                 <div class="row hero-row">
                     <!-- Hero content-->
@@ -221,7 +234,7 @@
         </section>
 
         <!-- Main -->
-        <main>
+        <main style="display: none">
             <!-- Brands -->
             <section class="brands" id="brands">
                 <div class="container">
@@ -825,7 +838,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer" id="footer">
+        <footer class="footer" id="footer" style="display: none">
             <div class="container">
                 <div class="footer__row">
                     <div class="footer__column">
@@ -974,11 +987,8 @@
         </footer>
 
         <script>
-            // Get the video
             var video = document.getElementById("videoDemo");
-            //  Get Play Button
             var btn = document.getElementById("playBtn");
-            // Play Function
             video.removeAttribute("controls");
             function playFunction() {
                 if (video.paused) {
@@ -990,6 +1000,11 @@
                     video.pause();
                 }
             }
+
+            const pcNav = document.querySelector("#pc-nav");
+            const mobileNav = document.querySelector("#mobile-nav");
+
+            mobileNav.innerHTML = pcNav.innerHTML;
         </script>
     </body>
 </html>
