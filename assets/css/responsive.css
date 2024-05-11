@@ -100,6 +100,10 @@
         row-gap: 50px;
     }
 
+    .hero {
+        padding: 60px 0 90px;
+    }
+
     .hero__content {
         width: 60%;
     }
@@ -110,6 +114,54 @@
 
     .hero__decor-icon--bottom {
         bottom: 0;
+    }
+
+    .hero-row {
+        justify-content: center;
+    }
+
+    .hero__content {
+        width: 76%;
+    }
+
+    .hero__title {
+        width: 100%;
+    }
+
+    .hero__decor-icon--top {
+        top: -40px;
+        left: 5px;
+    }
+
+    .brand__list {
+        justify-content: space-around;
+        line-height: 150px;
+        padding: 15px 90px;
+    }
+
+    .service__list {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .service-item__image {
+        width: 100%;
+    }
+
+    .service__controls {
+        margin: 0;
+    }
+
+    .about-row {
+        flex-direction: column;
+    }
+
+    .about__media {
+        margin: 44px;
+    }
+
+    .about__content {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -124,6 +176,19 @@
 @media screen and (max-width: 767.98px) {
     .hide-on-mobile {
         display: none;
+    }
+
+    .btn {
+        width: 140px;
+    }
+
+    .control-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .section-heading {
+        font-size: 2.5rem;
     }
 
     .header-action {
@@ -149,5 +214,69 @@
 
     .hero__title {
         font-size: 3rem;
+    }
+
+    .hero__decor-icon--top {
+        display: none;
+    }
+
+    .brands-row {
+        margin: 0 auto;
+    }
+
+    .brand__list {
+        line-height: 70px;
+        padding: 0 35px;
+    }
+
+    .brand-item__name {
+        font-size: 1.5rem;
+    }
+
+    .service__heading {
+        width: 100%;
+    }
+
+    .service__list {
+        grid-template-columns: auto;
+    }
+
+    .section-heading::after {
+        right: 40px;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+
+    .about__decor-icon {
+        display: none;
+    }
+
+    .about__media {
+        height: 300px;
+        margin: 10px;
+    }
+
+    .about__img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-card {
+        right: -70px;
+    }
+
+    .about__desc {
+        font-size: 1.4rem;
+    }
+
+    .about-stat__percent {
+        margin-right: 15px;
+        font-size: 3rem;
+    }
+
+    .about-stat__desc {
+        font-size: 1.2rem;
     }
 }
