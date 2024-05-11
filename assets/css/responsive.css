@@ -107,6 +107,10 @@
     .hero__bgc-blur {
         display: none;
     }
+
+    .hero__decor-icon--bottom {
+        bottom: 0;
+    }
 }
 
 /* Tablet */
@@ -124,5 +128,26 @@
 
     .header-action {
         display: none;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+    .hero__images {
+        flex-wrap: wrap;
+    }
+
+    .hero__image {
+        width: 40%;
+        height: 150px;
+    }
+
+    .hero__content {
+        width: 100%;
+    }
+
+    .hero__title {
+        font-size: 3rem;
     }
 }
