@@ -308,7 +308,7 @@ form:has(:invalid) .submit-btn {
     transform: translateY(-50%);
 
     /* Box model */
-    width: 1140px;
+    width: 100%;
     height: 1px;
 
     /* Color */
