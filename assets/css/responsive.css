@@ -94,6 +94,19 @@
     .navbar__item {
         width: 100%;
     }
+
+    .row {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    .hero__content {
+        width: 60%;
+    }
+
+    .hero__bgc-blur {
+        display: none;
+    }
 }
 
 /* Tablet */
