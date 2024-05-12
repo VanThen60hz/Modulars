@@ -254,6 +254,19 @@
         grid-template-columns: auto auto;
         gap: 50px;
     }
+
+    .blog__heading::after {
+        display: none;
+    }
+
+    .footer__row {
+        grid-template-columns: repeat(4, auto);
+        row-gap: 50px;
+    }
+
+    .footer__column:first-child {
+        grid-column: span 5;
+    }
 }
 
 /* Tablet */
@@ -419,5 +432,22 @@
 
     .blog__list {
         grid-template-columns: auto;
+    }
+
+    .footer__row {
+        grid-template-columns: auto auto;
+    }
+
+    .footer__column:first-child {
+        grid-column: span 2;
+        display: block;
+    }
+
+    .footer__column {
+        display: none;
+    }
+
+    .footer__separate {
+        display: none;
     }
 }
